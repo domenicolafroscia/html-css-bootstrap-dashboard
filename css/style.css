@@ -8,6 +8,17 @@ img {
     height: 100vh;
 }
 
+.ms_btn {
+    border: none;
+    background: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
 /* HEADER */
 header {
     height: 80px;
@@ -15,8 +26,6 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    /* debug */
-    border: 1px solid black;
 }
 
 .logo {
@@ -27,7 +36,6 @@ header {
 }
 
 .logo-desktop {
-    
     display: none;
 }
 
@@ -69,11 +77,6 @@ header {
 
 .icons-desktop {
     display: none;
-}
-
-.notifications button {
-    border: none;
-    background: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -128,21 +131,32 @@ main {
 .container-left {
     width: 70px;
     background-color: #12293E;
+    background-image: url(../img/sidebar-bg.png);
     display: flex;
     flex-direction: column;
     justify-content: space-between;  
 }
 
 .home {
-    background: linear-gradient(to top right, #12293E  0%, #12293E 20%, #051E34 20%, #051E34 80%);
-    /* debug */
-    height: 150px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .settings {
-    /* debug */
-    height: 80px;
-    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.container-left button {
+    color: white;
+}
+
+.container-left span {
+    padding-left: 1rem;
+    display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -155,23 +169,40 @@ main {
     .container-left {
         width: 120px;
     }
+
+    .container-left span {
+        display: inline-block;
+    }
 }
 
 /* container right */
 .container-right {
     width: calc(100% - 70px);
     overflow-y: auto;
-    border: 1px solid black;
 }
 
+/* blue section */
 .blue {
     background-color: #1B72E8;
+    color: white;
 }
 
-/* debug */
-.card {
-    height: 60px;
-    background-color: brown;
+.plus-btn {
+    margin-left: 1rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.background-grey {
+    background-color: #165BBA;
+    padding: 1px 10px 3px;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .change-order {
+        order: 3;
+    }
 }
 
 /* debug */
