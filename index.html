@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Dashboard</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Customized style -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <div class="wrapper">
         <!-- Header -->
@@ -25,11 +30,17 @@
 
             <div class="search-bar">
                 <label for=""><i class="search-glass fa-solid fa-magnifying-glass"></i></label>
-                <input type="text" name="Prova a cercare: Lezioni di Lavarel" placeholder="Prova a cercare: Lezioni di Lavarel" class="search">
+                <input type="text" name="Prova a cercare: Lezioni di Lavarel"
+                    placeholder="Prova a cercare: Lezioni di Lavarel" class="search">
             </div>
 
             <div class="notifications">
-               <button> <i class="fa-solid fa-bell" style="color: #FF8F00;"></i></button>
+                <button class="icons-desktop"><i class="fa-solid fa-list-ul" style="color: #5B5858;"></i></button>
+                <button class="icons-desktop"><i class="fa-solid fa-circle-question"
+                        style="color: #5B5858;"></i></button>
+                <button class="icons-desktop"><i class="fa-solid fa-ellipsis-vertical"
+                        style="color: #5B5858;"></i></button>
+                <button> <i class="fa-solid fa-bell" style="color: #FF8F00;"></i></button>
             </div>
         </header>
         <!-- /Header -->
@@ -37,22 +48,83 @@
         <!-- Main -->
         <main>
             <div class="container-left">
+                <div class="home">
 
+                </div>
+
+                <div class="settings">
+
+                </div>
             </div>
 
             <div class="container-right">
+                <div class="blue">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-3 py-4 gy-4">
+                            <div class="col">
+                               <div class="card"></div>
+                            </div>
+                            <div class="col">
+                                <div class="card"></div>
+                            </div>
+                            <div class="col">
+                               <div class="card"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row row-cols-1 py-4 gy-4">
+                        <div class="col col-lg-8">
+                            <div class="card">
+                                <div class="row row-cols-1 gy-4">
+                                    <div class="col">
+                                        <div class="card-2">
+                                            <h2>Prossime classi</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-3">
+                                            <h2>F.A.Q.</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4">
+                            <div class="card">
+                                <div class="row row-cols-1 gy-4">
+                                    <div class="col">
+                                        <div class="card-4">
+                                            <h2>Todo</h2>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card-5">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </main>
         <!-- /Main -->
 
     </div>
-    
+
 
 
 
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

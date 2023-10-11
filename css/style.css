@@ -62,6 +62,13 @@ header {
 
 .notifications {
     margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icons-desktop {
+    display: none;
 }
 
 .notifications button {
@@ -89,27 +96,117 @@ header {
         display: none;
     }
 
-    .logo-desktop {display: block;}
+    .logo-desktop {
+        display: block;
+    }
+
+    .icons-desktop {
+        display: block;
+    }
 }
 
 /* MAIN */
 /* common */
 main {
     display: flex;
+    height: calc(100vh - 80px);
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        height: calc(100vh - 70px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        height: calc(100vh - 60px);
+    }
 }
 
 /* container left */
 .container-left {
     width: 70px;
     background-color: #12293E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.home {
+    background: linear-gradient(to top right, #12293E  0%, #12293E 20%, #051E34 20%, #051E34 80%);
     /* debug */
-    height: 800px;
+    height: 150px;
+}
+
+.settings {
+    /* debug */
+    height: 80px;
+    background-color: aliceblue;
+}
+
+@media screen and (min-width: 768px) {
+    .container-left {
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-left {
+        width: 120px;
+    }
 }
 
 /* container right */
 .container-right {
     width: calc(100% - 70px);
-    /* debug */
-    height: 800px;
+    overflow-y: auto;
     border: 1px solid black;
+}
+
+.blue {
+    background-color: #1B72E8;
+}
+
+/* debug */
+.card {
+    height: 60px;
+    background-color: brown;
+}
+
+/* debug */
+.card-2 {
+    background-color: #12293E;
+    height: 400px;
+}
+
+/* debug */
+.card-3 {
+    background-color: #12293E;
+    height: 200px;
+}
+
+/* debug */
+.card-4 {
+    background-color: #12293E;
+    height: 200px;
+}
+
+/* debug */
+.card-5 {
+    background-color: #12293E;
+    height: 500px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container-right {
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-right {
+        width: calc(100% - 120px);
+    }
 }
