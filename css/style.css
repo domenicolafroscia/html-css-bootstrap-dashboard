@@ -200,11 +200,19 @@ main {
 .blue {
     background-color: #1B72E8;
     color: white;
-}
+} 
 
 .blue a {
     color: white;
     text-decoration: none;
+}
+
+.ms_offcanvas {
+    width: 100%;
+}
+
+.color-dark {
+    color: black;
 }
 
 .plus-btn {
@@ -219,9 +227,15 @@ main {
     border-radius: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
     .change-order {
         order: 3;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .ms_offcanvas {
+        width: 50%;
     }
 }
 
@@ -239,7 +253,7 @@ main {
 .table-buttons {
     color: grey;
     border: 1px solid grey;
-    margin-right: 1rem;
+    margin-right: .5rem;
     border-radius: 2px;
 }
 
@@ -260,13 +274,3 @@ main {
     padding: 0 5px;
     border-radius: 5px;
 }
-
-/* F.A.Q. column */
-
-
-
-/* Todo column */ 
-
-
-
-/* Stats column */
