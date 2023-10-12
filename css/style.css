@@ -3,7 +3,7 @@ img {
     max-width: 100%;
 }
 
-.wrapper {
+.ms_wrapper {
     width: 100%;
     height: 100vh;
 }
@@ -11,12 +11,6 @@ img {
 .ms_btn {
     border: none;
     background: none;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-
 }
 
 /* HEADER */
@@ -100,7 +94,7 @@ header {
     }
 
     .logo-desktop {
-        display: block;
+        display: inline-block;
     }
 
     .icons-desktop {
@@ -137,6 +131,11 @@ main {
     justify-content: space-between;  
 }
 
+.container-left a {
+    color: white;
+    text-decoration: none;
+}
+
 .home {
     display: flex; 
     flex-direction: column;
@@ -159,6 +158,10 @@ main {
     display: none;
 }
 
+.hover-btn:hover {
+    background-color: rgba(255, 255, 255, 0.295);
+}
+
 @media screen and (min-width: 768px) {
     .container-left {
         width: 60px;
@@ -179,12 +182,29 @@ main {
 .container-right {
     width: calc(100% - 70px);
     overflow-y: auto;
+} 
+
+@media screen and (min-width: 768px) {
+    .container-right {
+        width: calc(100% - 60px);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-right {
+        width: calc(100% - 120px);
+    }
 }
 
 /* blue section */
 .blue {
     background-color: #1B72E8;
     color: white;
+}
+
+.blue a {
+    color: white;
+    text-decoration: none;
 }
 
 .plus-btn {
@@ -205,39 +225,48 @@ main {
     }
 }
 
-/* debug */
-.card-2 {
-    background-color: #12293E;
-    height: 400px;
+/* column section */
+/* table column */
+.title-columns {
+    background-color: #F7F7F7;
+    border-bottom: 1px solid #E8E8E8;
 }
 
-/* debug */
-.card-3 {
-    background-color: #12293E;
-    height: 200px;
+.logo-developement {
+    width: 20px;
 }
 
-/* debug */
-.card-4 {
-    background-color: #12293E;
-    height: 200px;
+.table-buttons {
+    color: grey;
+    border: 1px solid grey;
+    margin-right: 1rem;
+    border-radius: 2px;
 }
 
-/* debug */
-.card-5 {
-    background-color: #12293E;
-    height: 500px;
+.done {
+    background-color: #198754;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
-
-@media screen and (min-width: 768px) {
-    .container-right {
-        width: calc(100% - 60px);
-    }
+.process {
+    background-color: #FFC107;
+    padding: 0 5px;
+    border-radius: 5px;
 }
 
-@media screen and (min-width: 992px) {
-    .container-right {
-        width: calc(100% - 120px);
-    }
+.failed {
+    background-color: #DC3545;
+    padding: 0 5px;
+    border-radius: 5px;
 }
+
+/* F.A.Q. column */
+
+
+
+/* Todo column */ 
+
+
+
+/* Stats column */
