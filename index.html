@@ -36,13 +36,13 @@
 
             <div class="notifications">
                 <ul class="list-unstyled d-flex mt-2">
-                    <li><button class="ms_btn icons-desktop"><i class="fa-solid fa-list-ul"
-                    style="color: #5B5858;"></i></button></li>
-                    <li class="mx-2"><button class="ms_btn icons-desktop"><i class="fa-solid fa-circle-question"
-                    style="color: #5B5858;"></i></button></li>
-                    <li><button class="ms_btn icons-desktop"><i class="fa-solid fa-ellipsis-vertical"
-                    style="color: #5B5858;"></i></button></li>
-                    <li class="mx-2"><button type="button" class="ms_btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover"> <i
+                    <li><button class="ms_btn icons-desktop"><i class="fa-solid    fa-list-ul"
+                        style="color: #5B5858;"></i></button></li>
+                        <li class="mx-2"><button class="ms_btn icons-desktop"><i class="fa-solid fa-circle-question"
+                        style="color: #5B5858;"></i></button></li>
+                        <li><button class="ms_btn icons-desktop"><i class="fa-solid fa-ellipsis-vertical"
+                        style="color: #5B5858;"></i></button></li>
+                        <li class="mx-2"><button type="button" class="ms_btn" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Profilo"><i
                         class="fa-solid fa-bell" style="color: #FF8F00;"></i></button>
                     </li>
                 </ul>
@@ -453,6 +453,11 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+        <script>
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+            const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
         </script>
 </body>
 
